@@ -2,14 +2,15 @@
 @import "./scss/variables";
 
 $new-primary: rgb(174, 31, 174);
-$new-secondary: rgb(201, 201, 201);
 $new-danger: #ff0077;
-$stefano: rgb(12, 143, 143);
+$new-info: #00ffea;
+$new-light: #f3eeff;
 
 $new-theme-colors: (
   "primary": $new-primary,
-  "secondary": $new-secondary,
   "danger": $new-danger,
+  "info": $new-info,
+  "light": $new-light,
 );
 
 $theme-colors: map-merge($theme-colors, $new-theme-colors);
@@ -43,5 +44,24 @@ $new-border-spacicing: (
 );
 
 $border-widths: map-merge($border-widths, $new-border-spacicing);
+
+$new-btn-padding-y: 0.75rem !default;
+$new-btn-padding-x: 2.5rem !default;
+
+$btn-padding-y: $new-btn-padding-y;
+
+$btn-padding-x: $new-btn-padding-x;
+
+$new-grid-gutters-width: 0.5rem !default;
+
+$grid-gutter-width: $new-grid-gutters-width;
+
+$new-card-bg-color: $dark !default;
+$new-card-color: $light !default;
+$card-bg: $new-card-bg-color;
+$card-color: $new-card-color;
+
+$new-radius-badge-border: $border-radius-pill;
+$badge-border-radius: $new-radius-badge-border;
 
 @import "./scss/bootstrap.scss";
