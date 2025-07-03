@@ -1,0 +1,47 @@
+@import "./scss/functions";
+@import "./scss/variables";
+
+$new-primary: rgb(174, 31, 174);
+$new-secondary: rgb(201, 201, 201);
+$new-danger: #ff0077;
+$stefano: rgb(12, 143, 143);
+
+$new-theme-colors: (
+  "primary": $new-primary,
+  "secondary": $new-secondary,
+  "danger": $new-danger,
+);
+
+$theme-colors: map-merge($theme-colors, $new-theme-colors);
+
+$new-font7: 1rem * 1 !default;
+$new-font8: 1rem * 0.75 !default;
+$new-font9: 1rem * 0.5 !default;
+$new-font10: 1rem * 0.25 !default;
+
+$new-font-sizes: (
+  7: $new-font7,
+  8: $new-font8,
+  9: $new-font9,
+  10: $new-font10,
+);
+
+$font-sizes: map-merge($font-sizes, $new-font-sizes);
+
+$new-border6: 6px;
+$new-border7: 7px;
+$new-border8: 8px;
+$new-border9: 9px;
+$new-border10: 10px;
+
+$new-border-spacicing: (
+  6: $new-border6,
+  7: $new-border7,
+  8: $new-border8,
+  9: $new-border9,
+  10: $new-border10,
+);
+
+$border-widths: map-merge($border-widths, $new-border-spacicing);
+
+@import "./scss/bootstrap.scss";
